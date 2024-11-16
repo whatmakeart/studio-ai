@@ -1,1 +1,293 @@
-hello world
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website for Studio AI workshop at the Cleveland Public Library on November 16, 2024." />
+    <meta name="author" content="Jimmy Kuehnle" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Studio AI Notes</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* youtube tutorial video iframes */
+      .iframe-16-9-container {
+        position: relative;
+        width: 100%;
+        height: 0px;
+        padding-top: 56.25%;
+      }
+
+      .youTubeIframe,
+      .vimeoIframe,
+      .responsiveIframe {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding-bottom: 2rem;
+        margin: 0 auto;
+      }
+
+      .gif-loop {
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="sample-markdown">Sample Markdown</h1>
+    <p>This is some basic, sample markdown.</p>
+    <h2 id="second-heading">Second Heading</h2>
+    <ul>
+      <li>
+        Unordered lists, and:
+        <ol>
+          <li>One# Studio AI Schedule</li>
+        </ol>
+      </li>
+    </ul>
+    <p>
+      Workshop about AI and the Arts with
+      <a href="https://www.google.com/search?q=jimmy+kuehnle">Jimmy Kuehnle</a>
+      , artist and Professor at the Cleveland Institute of Art.
+    </p>
+    <h2 id="12-00-12-30-students-experience-the-exhibit-performance">
+      12:00 - 12:30 / Students Experience the Exhibit Performance
+    </h2>
+    <h2 id="12-45-1-15-exhibit-debrief-and-discussion">12:45 - 1:15 / Exhibit Debrief and Discussion</h2>
+    <h3 id="questions">Questions</h3>
+    <ul>
+      <li>
+        Is there a difference between creating with technology versus creating with what is now &quot;traditional&quot;
+        technologies?
+      </li>
+      <li>If so, what is it?</li>
+      <li>Or are our new technologies merely an extension of existing relationships?</li>
+      <li>Can technology help us better understand each other, or does it drive us further apart?</li>
+      <li>
+        <a href="https://deepmind.google/discover/blog/mapping-the-misuse-of-generative-ai/">
+          Mapping the Misuse of Generative AI
+        </a>
+      </li>
+    </ul>
+    <h2 id="1-15-2-00-students-explore-the-library-space">1:15 - 2:00 / Students explore the library space</h2>
+    <p>
+      Search for creative inspiration using photography and/or sketching. Seek out different spaces of the library from
+      the list uf suggeted places, some hidden and some not so hidden. How high up can you go in the library? Use the
+      exhibit and the following questions as a starting point:
+    </p>
+    <ul>
+      <li>How can you capture the human side of technology in a photograph or sketch?</li>
+      <li>In your images, how can you represent the tension between the benefits and drawbacks of technology?</li>
+      <li>Can you visualize a future where technology and humanity are more integrated? What might that look like?</li>
+      <li>What emotions do you think technology evokes in humans? How can you express those emotions visually?</li>
+    </ul>
+    <h2 id="2-15-4-00-ai-studio-session">2:15 - 4:00 / AI Studio Session</h2>
+    <p>
+      I&#39;ll let you take the lead Jimmy throughout and especially during the AI studio. So, please do not feel
+      constrained by this schedule. This is more about providing students with some level of structure. If you have any
+      other changes or suggestions, please let me know.
+    </p>
+    <h2 id="ai-tool-list">AI Tool List</h2>
+    <h3 id="-frontier-models">&quot;Frontier&quot; Models</h3>
+    <ul>
+      <li><a href="https://chatgpt.com/">ChatGPT from OpenAI</a></li>
+      <li><a href="https://gemini.google.com/">Gemini from Google</a></li>
+      <li><a href="https://claude.ai/">Claude from Anthropic</a></li>
+      <li><a href="https://www.meta.ai/">Llama from Meta</a></li>
+      <li><a href="https://mistral.ai/">Mistral Large 2 from Mistral AI</a></li>
+    </ul>
+    <h3 id="study-assitants">Study Assitants</h3>
+    <ul>
+      <li><a href="https://notebooklm.google/">Notebook LM by Google</a></li>
+    </ul>
+    <h3 id="portrait-manipulation-and-generation">Portrait Manipulation and Generation</h3>
+    <ul>
+      <li>
+        <a href="https://huggingface.co/spaces/jbilcke-hf/FacePoke">Face Poke on Hugging Face</a>
+        allows users to upload a portrait image and then manipulate the expression and angle of the face by dragging
+        with the cursor. On a touchscreen, pinch and spread to manipulate mouth and eyes.
+        <a href="https://github.com/jbilcke-hf/FacePoke">Face Poke GitHub Repository</a>
+      </li>
+      <li>
+        <a href="https://huggingface.co/spaces/InstantX/InstantID">InstantID on Hugging Face</a>
+        preserves the identity of the original portrait image while changing the style. It uses a separate image that
+        can be a different person to generate the expression. It also accepts text prompts to further refine the
+        generated output.
+        <a href="https://github.com/instantX-research/InstantID">InstantID GitHub Repository</a>
+      </li>
+      <li>
+        <a href="https://huggingface.co/spaces/CVPR/ml-talking-face">ML Talking Face</a>
+        &quot;generates a talking face video based on the input text.&quot; [^talking-face]
+      </li>
+      <li><a href="https://huggingface.co/spaces/KwaiVGI/LivePortrait">Live Portrait</a></li>
+      <li>
+        <a href="https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On">Kolors Virtual Try On</a>
+        - Upload a picture of a person and a picture of clothing to have the person virtually try it on. This Hugging
+        Face Space is one of many examples of how bias can be introduced into models by what training data is selected.
+      </li>
+      <li><a href="https://huggingface.co/spaces/TencentARC/PhotoMaker-Style">PhotoMaker Style</a></li>
+    </ul>
+    <h3 id="image-generation">Image Generation</h3>
+    <ul>
+      <li>
+        <a href="https://huggingface.co/spaces/multimodalart/flux-lora-the-explorer">Flux LoRA the Explorer</a>
+        - demonstration of Low Rank Adaptation (LoRA) is a technique of fine tuning an already trained model to do
+        specific tasks efficiently
+        <a href="https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev">FLUX.1-dev from Black Forest Labs</a>
+      </li>
+      <li><a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">FLUX.1-dev Demo without LoRA</a></li>
+      <li>
+        <a href="https://replicate.com/black-forest-labs/flux-pro">Flux Pro Demo</a>
+        - Larger more powerful model that requrires payment.
+      </li>
+      <li><a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">Stable Diffusion 2.1</a></li>
+    </ul>
+    <h3 id="image-enhancement-and-upscaling">Image Enhancement and Upscaling</h3>
+    <ul>
+      <li><a href="https://huggingface.co/spaces/finegrain/finegrain-image-enhancer">Finegrain Image Enhancer</a></li>
+    </ul>
+    <h3 id="3d-model-generation">3D Model Generation</h3>
+    <h3 id="video-generation">Video Generation</h3>
+    <ul>
+      <li>
+        <a href="https://huggingface.co/spaces/THUDM/CogVideoX-2B-Space">CogVideoX-2B-Space</a>
+        <a href="https://github.com/THUDM/CogVideo">CogVideoX on GitHub</a>
+      </li>
+      <li>
+        <a href="https://huggingface.co/spaces/THUDM/CogVideoX-5B-Space">CogVideoX-5B-Space</a>
+        <a href="https://github.com/THUDM/CogVideo">CogVideoX on GitHub</a>
+      </li>
+      <li><a href="https://huggingface.co/spaces/ByteDance/AnimateDiff-Lightning">AnimateDiff-Lightning</a></li>
+      <li><a href="https://hpcaitech.github.io/Open-Sora/">Open Sora</a></li>
+      <li>
+        <a href="https://www.adobe.com/products/firefly/features/ai-video-generator.html">
+          Firefly Video Generation by Adobe
+        </a>
+        - soon to be released, can join waitlist
+      </li>
+      <li>
+        <a href="https://openai.com/index/sora/">Sora by Open AI</a>
+        - not available yet, just a demonstration site
+      </li>
+    </ul>
+    <h1 id="further-reading">Further Reading</h1>
+    <h2 id="copyright-articles">Copyright Articles</h2>
+    <h3 id="one-case-against-openai-dismissed-for-now">One Case Against OpenAI Dismissed for Now</h3>
+    <ul>
+      <li>
+        <a href="https://news.bloomberglaw.com/ip-law/openai-defeats-raw-story-copyright-training-lawsuit-for-now">
+          OpenAI Defeats Raw Story Copyright Training Lawsuit for Now - Bloomberg Law
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.latimes.com/business/story/2024-11-13/column-openai-just-scored-a-huge-victory-in-a-copyright-case-or-did-it">
+          OpenAI Just Scored a Huge Victory in a Copyright Case or Did it? - LA Times
+        </a>
+      </li>
+      <li>
+        <a href="https://www.wired.com/story/opena-alternet-raw-story-copyright-lawsuit-dmca-standing/">
+          OpenAI Raw Story Copyright Lawsuit DMCA Standing - Wired
+        </a>
+      </li>
+    </ul>
+    <h3 id="new-york-times-lawsuit">New York Times Lawsuit</h3>
+    <ul>
+      <li>
+        <a href="https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html">
+          New York Times OpenAI Microsoft Lawsuit - New York Times
+        </a>
+      </li>
+      <li>
+        <a href="https://hls.harvard.edu/today/does-chatgpt-violate-new-york-times-copyrights/">
+          Does ChatGPT Violate New York Times Copyrights? - Harvard Buisness
+        </a>
+      </li>
+      <li>
+        <a href="https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf">Lawsuit Filing Documents</a>
+        pages ~30-46 show near verbatim reproduction of text from the New York Times
+      </li>
+    </ul>
+    <h2 id="ai-bias-articles">AI Bias Articles</h2>
+    <ul>
+      <li>
+        <a href="https://www.bloomberg.com/graphics/2023-generative-ai-bias/">
+          Generative AI Takes Stereotypes and Bias From Bad to Worse - Bloomberg
+        </a>
+      </li>
+    </ul>
+    <h2 id="references">References</h2>
+    <p>
+      [^talking-face]:
+      <a href="https://huggingface.co/spaces/CVPR/ml-talking-face">ML Talking Face</a>
+    </p>
+    <ol>
+      <li>Two</li>
+      <li>
+        Three
+        <ul>
+          <li>More</li>
+        </ul>
+      </li>
+    </ol>
+    <blockquote>
+      <p>Blockquote</p>
+    </blockquote>
+    <p>
+      And
+      <strong>bold</strong>
+      ,
+      <em>italics</em>
+      , and even
+      <em>
+        italics and later
+        <strong>bold</strong>
+      </em>
+      . Even
+      <del>strikethrough</del>
+      .
+      <a href="https://markdowntohtml.com">A link</a>
+      to somewhere.
+    </p>
+    <p>And code highlighting:</p>
+    <pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">baz</span><span class="hljs-params">(s)</span> </span>{
+   <span class="hljs-keyword">return</span> foo + <span class="hljs-string">':'</span> + s;
+}
+</code></pre>
+    <p>
+      Or inline code like
+      <code>var foo = &#39;bar&#39;;</code>
+      .
+    </p>
+    <p>Or an image of bears</p>
+    <p><img src="http://placebear.com/200/200" alt="bears" /></p>
+    <p>The end ...</p>
+  </body>
+</html>
